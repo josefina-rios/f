@@ -1,0 +1,142 @@
+/* TIPOGRAFÍAS REDONDITAS */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Poppins:wght@400;600&display=swap');
+
+body {
+    background: linear-gradient(135deg, #1b2a1e, #2f4f2f);
+    font-family: 'Nunito', sans-serif;
+    color: #e6f2e6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* PANTALLA INICIAL */
+#pantalla-inicio {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BOTÓN INICIAL */
+#pantalla-inicio button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 15px 25px;
+    background-color: #3b6b3b;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#pantalla-inicio button:hover {
+    background-color: #5a8f5a;
+}
+
+/* CONTENIDO OCULTO */
+#contenido {
+    display: none;
+}
+
+/* CAJA PRINCIPAL */
+.contenedor {
+    max-width: 650px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    animation: aparecer 1.5s ease;
+}
+
+/* TÍTULO */
+h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #a8d5a2;
+    margin-bottom: 25px;
+}
+
+/* TEXTO */
+p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* FINAL */
+.final {
+    text-align: center;
+    font-weight: 800;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+/* BOTÓN */
+button {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 22px;
+    background-color: #3b6b3b;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #5a8f5a;
+}
+
+/* MENSAJE OCULTO */
+#sorpresa {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+
+
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-120vh);
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.corazon-click {
+    position: fixed;
+    font-size: 20px;
+    pointer-events: none;
+    animation: subir 2s ease-out forwards;
+}
+
+@keyframes subir {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -150px) scale(1.8);
+        opacity: 0;
+    }
+}

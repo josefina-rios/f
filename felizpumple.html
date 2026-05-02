@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz cumpleaños</title>
+    <link rel="stylesheet" href="felizpumple.css">
+</head>
+<body>
+
+    <div id="pantalla-inicio">
+        <button onclick="abrirCarta()">💌 toca pue</button>
+    </div>
+
+    <div class="contenedor" id="contenido">
+        <h1>Feliz cumpleaños bonita 💗</h1>
+
+        <p>
+            Espero que tengas un día hermoso, me hubiera encantado pasarlo juntas pero aunque sea quería desearte un feliz cumple
+            de alguna forma pqpq perdón pero no podía no hacerlo :c, es un día demasiado especial y VOS sos demasiado especial para mí.
+        </p>
+
+        <p>
+            Ojalá lo disfrutes mucho y en serio perdón si no es lo ideal que te lo diga (imagina que pongo el emoji de siempre cjhbrfj creo que no puedo ponerlo).
+        </p>
+
+        <p>
+            También perdón si esta no es la gran cosa pero fue lo único que se me ocurrió para poder decirte algo sin hablarte directamente,
+            igual recíen estoy aprendiendo lo de las paginas, vos pensa que está lindo bueno.
+            Por mandarte esto también ,igual nose si lo abrás siquiera y si está mal o no te hace sentir bien PERDÓN.
+        </p>
+
+        <p>
+            Creería que es la última cosita que te mando :c no queria no decirle feliz cumple a la chica que me tiene re tonta, te amo demasiado,
+            saliste HERMOSAAA en las fotos, sos la mas linda de todas para mí, te juro que no podía dejar de verlas y mostrarle a las chicas lo linda que salias, me moria de amor .
+        </p>
+
+        <p>
+            Te extraño muchísimo, en serio, no dejo de pensarte y te jjuro que ahora siento que el tiempo pasa lentisimo, vos seguro debes seguir 
+            muy ocupada con todo esto de la elección ,espero que estes bien y ese dia disfrutalo mucho porfi, sonreí, reite todo lo que quierasss, dios como me encanta tu sonrisa
+            me vas a tener loca toda la vida se me hace, te amo como no tenes idea tonta, no lo olvides nunca. Suerte en todooo.
+        </p>
+
+        <p class="final">
+            Ti amo demasiado bonita, pasala muy lindo hoy ,si? Hoy come torta por mí  💗
+        </p>
+
+        <button onclick="mostrarSorpresa()">tocame bnvwubf</button>
+        <p id="sorpresa"></p>
+    </div>
+
+    <script>
+        function abrirCarta() {
+            document.getElementById("pantalla-inicio").style.display = "none";
+            document.getElementById("contenido").style.display = "block";
+        }
+
+        function mostrarSorpresa() {
+            document.getElementById("sorpresa").innerText = " te amo amor de mi vida💗";
+        }
+    </script>
+    <script>
+document.addEventListener("click", function(e) {
+    const corazon = document.createElement("span");
+    corazon.innerText = "💗";
+    corazon.classList.add("corazon-click");
+
+    corazon.style.left = e.clientX + "px";
+    corazon.style.top = e.clientY + "px";
+
+    document.body.appendChild(corazon);
+
+    setTimeout(() => {
+        corazon.remove();
+    }, 2000);
+});
+</script>
+
+</body>
+</html>
